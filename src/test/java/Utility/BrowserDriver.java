@@ -8,11 +8,10 @@ public class BrowserDriver {
     public static WebDriver driver;
     public static ChromeOptions Options;
     public BrowserDriver(){
-        Options = new ChromeOptions();
-        Options.addArguments("--start-maximized");
+
 
         this.driver=driver;
-        System.setProperty("webdriver.chrome.driver","src/test/resources/Drviers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.verboseLogging", "true");
         this.driver= new ChromeDriver();
         driver.get("https://anupdamoda.github.io/AceOnlineShoePortal/index.html");
     }
