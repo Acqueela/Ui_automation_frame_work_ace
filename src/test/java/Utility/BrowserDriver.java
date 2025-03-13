@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class BrowserDriver {
     public static WebDriver driver;
     public static ChromeOptions Options;
-    public BrowserDriver(){
+    public BrowserDriver() {
 
 
         this.driver=driver;
